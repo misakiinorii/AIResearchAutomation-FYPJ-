@@ -1,0 +1,140 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="800,1350.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1285.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 0509.enl" sap:VirtualizedContainerService.HintSize="449.6,1196.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d65357f0-621e-44a8-974e-d525f6602621" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,882.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All References'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d65357f0-621e-44a8-974e-d525f6602621" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="59, 126, 109, 33" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;wnd cls='SysTreeView32' /&gt;&lt;ctrl name='All References' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SysTreeView32' /&gt;&lt;ctrl name='All References' role='outline item' automationid='' check:text='All References' /&gt;" Guid="ba7166be-60b0-4429-8e28-318c28e8de5e" InformativeScreenshot="dbbc84e203c683121dbda8fea889c5c3.png" ScopeSelectorArgument="&lt;wnd app='endnote.exe' cls='Afx:*' title='0509.enl' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insert a'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d65357f0-621e-44a8-974e-d525f6602621" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="313, 365, 1116, 34" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd aaname='Horizontal' cls='SysListView32' /&gt;&lt;ctrl role='list item' virtualname='Bramer, Wichor M; Milic, Jelena; Mast, Frans 2017 Reviewing retrieved references for inclusion in systematic reviews using EndNote Journal of the Medical Library Association: JMLA 12/9/2024 Journal Article' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd aaname='Horizontal' cls='SysListView32' /&gt;&lt;ctrl role='list item' virtualname='Bramer, Wichor M; Milic, Jelena; Mast, Frans 2017 Reviewing retrieved references for inclusion in systematic reviews using EndNote Journal of the Medical Library Association: JMLA 12/9/2024 Journal Article' automationid='' check:fulltext='Bramer, Wichor M; Milic, Jelena; Mast, Frans&amp;#x9;2017&amp;#x9;Reviewing retrieved references for inclusion in' /&gt;" Guid="558118f4-afa4-43f1-b53f-e89ae19d8278" InformativeScreenshot="2db1e0e8a071ffca54fec570b5b18e3f.png" ScopeSelectorArgument="&lt;wnd app='endnote.exe' cls='Afx:*' title='0509.enl' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="313, 229, 1061, 100" FullSelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd cls='Afx:*' idx='34' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd cls='Afx:*' check:fulltext='Insert a citation for each selected reference. You can insert up to 250 consecutive citations.&amp;#xD;&amp;#xA;Add' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insert'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d65357f0-621e-44a8-974e-d525f6602621" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1559, 439, 84, 37" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd cls='Afx:*' title='Summary' /&gt;&lt;wnd cls='Afx:*' title='Summary' /&gt;&lt;wnd cls='Afx:*' idx='3' /&gt;&lt;ctrl name='Insert' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='Imported References' /&gt;&lt;wnd cls='Afx:*' title='0509.enl' /&gt;&lt;wnd cls='Afx:*' title='Summary' /&gt;&lt;wnd cls='Afx:*' title='Summary' /&gt;&lt;wnd cls='Afx:*' /&gt;&lt;ctrl name='Insert' role='push button' automationid='' check:text='Insert' /&gt;" Guid="6b65c768-cd2c-46b2-9be9-e1fc80235db0" InformativeScreenshot="926e47f6592f4a554ea551c4221fc151.png" ScopeSelectorArgument="&lt;wnd app='endnote.exe' cls='Afx:*' title='0509.enl' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\EndNote 21\endnote.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARlSURBVFhH7ZdrTFtlGMdbJQoBjGAMH4ww02jIMoyLkKkfMFGnywYmy6bRGeIWotvQcjGbixq8LHUbcyIXZSuwMaEdW4dzDqeb2YzMCa0wSoEZYULHZSmlx9KWU3qjf3zf0yvYbmOUy4c+yS+n7fv2eX7nffqe08ObmpriAViyBBScnJzkKRQKL9c62Qf7umyCuULyPHSltSvCP7cHWnOmByWgoNVq5fnHhuVK0ZYnTO1z5ZXkjtr4yJQkd9ppQWvO9KAEFYyIiODFx8Xz4+6P429c0SF760mA8jbhnRlsc+N5Tedtd+P5HmVDslL58AOrVtCclJiYGLfeLAXJcvObm5s3q1SqFoJ836tjjKdI0ZtAdxMw3OPj1D7g252AuhM4XQwUpAPnxcCFw0DOUz7B3Oevsee/byMpVXKpRFodGxv7SHR09OwFCXfp9fpCcuSiItviLVK6HdANAH1twCWJiyohcFIEWM2A/gbw6XNA62mg/Szw7jM+wffXqdF/dYzL2dvbOy4SiU69uHpNSmRkVOgFz5UDheuBDzNcEsfdgswQcObArQUHBwdxqFhm2JhaeyJ52bOCkAuOjQBDV0m7L5K2v+ET/KPetbpd5PNbCVZ+8TOyV7X1Ll/20sqQC8obSGs/Ar4pAHas9gkezSPFu8lKDi6yYCNp407ynpJPOOEWrCCb6NdqYNKxgIJfbzF7i5RsBUb+AexWH7+TjXKmCGANZPw1wjbAxJDf4Q/k0vO0T3DH2n70d8+z4K4XgMPvAdKPfXy5CdiTCdSRlu8iK5ZPLjPiHLLaZDW3pi2w4FyYN0F5oxGSA0NBqf/qBmTlWtSXaAKOe2io7IFOY+JyhlTQZGQxOsIERc8YYGatMI6NBxz38C8zBrvdzuUMqaDZbIbBYAgKy7Igt0dYLJaA4x7Gx8e5eTTCgv6EBQMMhAXDgv6EBQMMhAUXVZDec3Wjeui009EzRljMdtgsk+jvuw7x/p8WXpDRGdDUYELN7gnUfGaextHdFkj22CHd68Bx8WVU7G1ceMFRjQFHPmAD/h904UTu2iYcKpPgR6lqqQm65EqLD0Kr1aL1wsgSEky1IS+zBQdLa6HRaLi8bRe1S0SQyOVn/omqspMYGBiA0+nk8oZMcGJiAkajMSj0BKggKQLdiJEI+j/DOJGX0YLKMhnUajUcDvI86o6QCdLiNHEw6DhdFXpkjXbUFtq8crnrfuPaSq97dK5/hExwNmFhnaj7xM4JCsmGKC8Rg2EYb1v9Y9EEJeSaV/CyHOLyY9xuDRZ3LEjOlq9QKF5Xtit7hoeHnQTcLur+IXxX1YG6ykaurYFWzhN3LGiz2Xjp6en3CYXCbGn12b9q9l921BQ143Y4QqgUXcKxkis4V3cdv0gHg1Jd+DeyHm+fvSCdzOfzeUlJSTEZaZ/nZKW2NW1OUylmT+dNyVqpUqx/TC5LEax59KaCM6GTPZGQkHA3Eb03MTExcj4QCAT3REVF8WnN/7tM8f4Dsq9DbfovD3YAAAAASUVORK5CYII=" InformativeScreenshot="f06a55b0dc713f6fdc27564313aa2359.png" Selector="&lt;wnd app='endnote.exe' cls='Afx:*' title='0509.enl' /&gt;" Title="0509.enl" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

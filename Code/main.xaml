@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.citation_title="Citation Tools" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="citation_title" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848.8,1811.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,2126.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="summary.docx  -  Compatibility Mode - Word" sap:VirtualizedContainerService.HintSize="449.6,2037.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="02586a45-74de-41cf-b7e8-190da134ae6b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1723.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,210.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Shortcuts="[d(hk)][d(ctrl)][k(end)][u(ctrl)][u(hk)]" Version="V4" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'EndNote 21'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="c17ff545-f70c-4ea0-b7ab-74942e0f2617" CvTextArea="906, 80, 88, 16" CvTextArgument="EndNote 21" CvType="Text" DesignTimeRectangle="896, 69, 110, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='EndNote 21' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='EndNote 21' role='Tab Item' automationid='' check:fulltext='EndNote 21' /&gt;" Guid="4abc9507-5671-49c8-a741-dcc9424d1901" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAqCAYAAABvAA/nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOCSURBVHhe7Zi9ilRBEIXnKXyCfQA3X/M1NFAjAzUWTRWzRcxEDEWMBNFEEEwEBRPBwMzAQAwEdxHx5w2ufBfOcrat7nFmVqf3WgMf07e6urq7Tnfd2Z39+Lo3JL2xuzApZJfEYrVIIbskFqtFCtklsVgtUsgjSQo5EVLIiZBCToQUci38LIh8ViOF/CekkBMhhZwIKWTyh6SQEyGFnAidC7mxsTES9SXOCkLevLGzn+iSyH8Zyng+56uXzw/4wrOnT8a+s2dO/9Y3jw/v3w3Xr10drly+FPYvyts3r8dYm5vHxzXxzTPzuB/7wI4P6/e+RVhZyBNbW2PinMh/GYgPenYho3lWEXKVsRHEQbyLF86PB4Q8EZ9n+hFQNrFWIfmO+g8DbVDPLiTcuX3rgH9PQrI2v320tW6eme/k9vZw/97dcU7s3QqpBT56+GC/fAAntPRl4zqhfDNG/vLRnIzntIMnqyYGdm6C4hHf1611Oh5DSVcfsaLSPg/NU7N3L6SXGNrlOESUHz5eikB+PicnmbZKFURC6kAQm8PksWnjQywdNImMzccTE7v2AOX7roVuJOPKPhdy2X8YHPqPHezy0QJJkmyeGNnYHDY/5RIFZNOcmkPxielj5sUmqbLzo6Q2FhCW2+g2raMs7TWYTzfa8yO0j7UKyUZZiNBJBl+gbDqZjOO5lkDADnouhUQEBCEWcctYrdjcLPq03shXthqRKCWsUSL6gXY8T2sTsrUZX6DbsQHtVrLdD6I5VZYRpozVil3GinxlQwjaJbrNNagCuvkq4xGep/9WSPCy5bFasXUjW2VZtrK0/gkSETRHDc/TkRVSpRb8PaabJj+ozck47Dr9LoZstXckbWyRaO5X7qFWJoUOVzkuogshy3ckKGm+QB+LDfSs20HSaJMk4pZ+rcOjPmBe2fXrltjEJb5i+/vcDxR+mkNxtTaetS+NLaHkKpZy4vihAmz4rlXICAnnC/Sx8nMbSdLp12ZLP82pJJdIIMa7ndKmGwK0o3KHsFqD3zj/G1fxW+WS/co3oszHWoVM+iKFnAgp5ERIISdCCtkh/OBZBMakkB0SidWCMUsJeW7nxXDs1OPkL0F+I8FqoMlSQkaTJ4dLJFgNNMkb2SHk1/Mdiefgk+/II0AknoPP7NuXz0PSN9/ngM9s99PHIembvTngMxvyM4lPCjmJzzD8AvDu+3mbOP97AAAAAElFTkSuQmCC" InformativeScreenshot="99caf84e30a8fe742e81bc69066282ba.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='summary.docx  -  Compatibility Mode - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'More Options'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="34, 159, 71, 48" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia automationid='_Dropdown' cls='NetUIRibbonButton' name='More Options' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia automationid='_Dropdown' cls='NetUIRibbonButton' name='More Options' role='Menu Item' check:fulltext='More Options' /&gt;" Guid="25cb2efc-9e35-4854-9dd2-2e73c912bc80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAA0CAYAAADCOsX+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJSSURBVGhD7ZiNbYMwEEY7TPbIINkja2SNjJE5sgzVi/pV1y8Gcy2UltyTrIB/Du7ZoJi3oZhNyUpQshKUrAQlK0HJSlCyEiwu63w+P8oe2ZWs6/U6nE6nj7PlKVkJVpd1PB4fSfB7OBwe5X6/f7QOw+12+6z3tsvlMtqmuGpDUuy7xoT9iixuXonSRh1QF9sQF/vFVSIxwuPCLlYWK0RoJfmx4yJAq0nHMS7sQpYSBF9NWiGxjz+asURZcQzsXhaoTvVTK068rCxBojxa6oO0MV5OFjKikNiXpH11TcUFznsr8idsLotjlTgOJEwlxmnJAupbsZZgcVl7pmQlKFkJSlaCkpWgZCUoWQlKVoKSlWBSlrYPsQj+IcfzpVgr7hKMymLbQIkgr7XFAOqzm9jvjNmSpixm10X1+E+yWhOuveoUTVk8Br2BCNVm1Te8qtemWSVOwNiYGFf4t3hvJy4C+FUfrt1C9xTvpVXX4kmWvgT08KRaq0TfpgTtvTEel2O/H5KKfSRJ16KtlzjtFImK8cZ4kkUCS8lyvM8cWdyLr3JNqOSQ9Nh3/ikkeY4oWF2WP0JxxnuyppKmXhKJSSyh1RJX9RhRco8nWbqQz6YzRxZJ+Er6a7IyNF/wJOBJOD1ZrUSZxYyssYnz2JvK0sU8EW5IN9WSFRPwRHXusuIY8Lgcex9ixMdnU1kCWVxUJSbqSQHt9FN9fF8poRgDfEwrrr/3/D2j2GITWcVXSlaCkpWgZCUoWQlKVoKSlaBkJShZCUpWgpKVoGQlKFkJStZshuEd30H0PxgQl1sAAAAASUVORK5CYII=" InformativeScreenshot="09a467414634a309fe00e1806e37318e.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='summary.docx  -  Compatibility Mode - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="34, 111, 71, 48" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia cls='NetUIRibbonButton' name='Insert Citation' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia cls='NetUIRibbonButton' name='Insert Citation' role='Button' automationid='' check:fulltext='Insert Citation' /&gt;" Guid="e8b94e73-076f-4380-ae3e-3ddedb6cecaa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAA0CAYAAADCOsX+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOnSURBVGhD7Zq7SywxFIfvH6eIiIKg+ChkQWELUSwUwUIsbISVLQWtxC1W0UYECys7tfKJCCouPsAHPlBR10cuv3hmbmaMa3JNZkbJBwfcnDOvz0wmk90/zKGMk6WBk6WBk6WBk6WBk6WBEVkvLy9sbGyMVVdXs7KyssgDx8XxcR42MSJrdHRUehFRB87DJkZkxdWjwoHzsIkRWbITjyts4mRpYE1WFER9XCdLA+uy7u/v2erqqjQ2NzepSr1OpNRxbWBdFi5WlvfCQ7VORLXOFE6WBk6WBk6WBk6WBk6WBtZlPT8/s7OzMx6Hh4eBmoaGBqoqXVdfX09VQerq6j6ETazLEnl4eAjUDA4OUiZIuG5gYIAy8RKprPX19UDN5OQkZYKE63K5HGXiJTJZr6+vrLW1NVCzsbFB2X/I6tbW1igbL5HIgoChoaFAvqWlhb29vVHFO6p1cWFd1u3tLb/gcH5nZ4cq3lGtixPrssJTgsrKSt4W7i3huvLycrayssJzqD06OmL5fJ719vayVCrF+vr62MzMDDs9PY2s50UmC5KGh4d5D5Ih1k1MTPBVCHB9fc06OzsD+w4HxN3d3fF6m1iXhYu+vLz88r+PuvPzcz5ueRQKBS5Ptv9wVFVVsePjY9rSDpEM8P/Dzc1NQBT+XlhY4EIgFrfl/Pw8q6ioCNR81nNNkEhZ6IXirYdxChNVGRDX1dXl13Z3d1sbwxIpS3zdwddbT09PlJEDkWIvPDk5oYxZEikLA7y3n+XlZWotzeLior/N1NQUtZrFmiw83VRCdsu0t7f7+8HTUIWLiwt/m56eHmo1izVZqiH7fYL4Dbfq7xeKxaK/TXNzM7WaJZGyMOn08qrzJ/RAb5v+/n5qNYsRWel02j9R3ZDJymQyfn57e5taS4Nb2ttmenqaWs1iRNbe3p5/orohk4VVBi+P90VxoioD+2hsbPS3OTg4oIxZjMgCmO9sbW19GMC/CtkADzm1tbX+xY+MjHwqDO3ZbNavxcMh0fMsG2CtyxOAwBrX/v4+n3NBxuPjI9vd3f2wUrG0tER7ME9iZQGsKogiVAJPUryL2iDRstCDsEwjvv/JAoKwTi9+tiEs0bI8cOvNzs6ypqamgKS2tjb+co0BHmKxVm9T2I+Q5QEh+MoM74KyQRxt4qtSTU0Nf/CY4kfJUgHCxsfHfWFzc3OU+T6/ThaAMNyeHR0d7Orqilq/z6+UZQsnSwMnSwMnSwMnSwMnSxnG/gKPa8C4mxiiUgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'More Options'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="2, 2, 243, 36" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Insert Citation…' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Insert Citation…' role='menu item' automationid='' check:text='Insert Citation…' /&gt;" Guid="ba1bf428-c6c0-4a3a-afb7-171c3d043023" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPcAAAAoCAYAAAAi5GypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASdSURBVHhe7Zo9S+xMGIbfH7M/RcTCdP6BxcJCq60srdVGYf0oBCstFYuAoGIjguAHyCKIlRbi9xfWc/Z+Nllnkidmsyd6due9b7g4yUzmOcmSa2eS9b9qtWoIIf4hcjMM41ccuT8/PwkhHoBQbkI8BKHchHgIQrkJ8RCEchPiIQjlJsRDkFLk3t3dNUNDQ2ZgYKArxsfHzcvLi1qbEFIcpBS5/0bsmOPjY7U2IaQ4SClyx4LOz8+bo6OjQsRjsa3VJoQUBylVbgj68fFh7u/v27y/v6tt2li7JiGke5DS5Ya88f53bdpYuyYhpHsQyk2IhyBeyB3WKqZSC9W+XqJRD0yl0jzXNjUTRn1yDdZ+WfxUXdLbIKXLjefr19dXs7q6Km3n5+dqWzz25OREQL9dswj/VO6wZipB3TS0vjYNUw8UyZpja6G1n+jLr5ugmzHES5DS5cY+ZB4bG5O229vbVNvNzY38ro02u0639LrcMmP/hqiUm0QgPzJzz8zMyP7k5KTs220jIyNmcHBQtvHv4uKieXt7U+t2iit3a5ashfFsCQJTb1hjIEF7aez2uUtnuy+uG5qa9DVnXVnyWqhfMK3jM2foCFxDUG+0t9W6jboJ7HZL5Kwxdt2Y1OOBc94dfH6k50FKlzt+vsZv3vFPXmjDH7oMDw9L39zcnNnZ2TELCwuyD+HLW5bHN+XXDSn9sQgiiHWzhvX2dmqGlS+BeCndqhsENfdGz5stnRrZpCRU6jbq9v8dXactpjImWbcltn0+yTo5nx/pC5Afmbnt37EB2paWluSYq6srp+/6+lraZ2dnnfYiaHI7oojQ0Q1tbztghk3OUK1arVlXqQt+Ue4UyWNy5dausYnzmeR8fqQvQEqXW+uH3FiCLy8vq/3r6+syHsdp/XlocjvLYGe2bvVjuekcIxK22pPYcqeW13kSSt3y5E4tqYvInXkutvR5nx/pB5BS5d7c3JQluA2ep5+fn6X/4OBAHX96eir9d3d3an8exeS22yBIdLPnStil3B2KkS939Kz/nczKuVDu/ydIqXJr7O3tyTId22tra+r4ra0t6e/2ubsrua1j5ebPvYG7lDsa93V+Orlyy/m5YqrvCL6TO+sandqU2weQUuSenp52hLbZ39+XY6ampuSlGmZzeyxmdbxoi9+s232dUkjupgBffe6xUscRqNlfi2VR6oLM2dBGmXWBdS6q3HbdpGCyn6ipnEuyrnqNzev6Oibn80senziv1BcO+ScgpcgNKR8eHlJLchAL+/T0JHKDMAzNxcWF2d7eNkEQyJfAxsZGqm6nFJI7liLCEapJ6+bX+jPkjtrl+G9nZ+u4GEuClNxKXed5G2MhsyNSeky6bvq5Xft/KXd/g5Qid6dA9omJCWdmHx0dbf8Gfnh4qI4jhBQD+VW5AWbyx8dHc3l5KX+9hn2wsrIigp+dnanj+hV7hsxCG0fI34D8utxZQHC8cMt66UYI6RykZ+QmhJQHQrkJ8RCEchPiIQjlJsRDEMpNiIcglJsQD0EoNyEeglBuQjwEodyEeAhCuQnxEMSRm2EYf0K5GcbTVKtV8wdiXZK03ruMoAAAAABJRU5ErkJggg==" InformativeScreenshot="eca2b9b6a7a25fe312b12295f5897487.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='summary.docx  -  Compatibility Mode - Word' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="34, 159, 71, 48" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia automationid='_Dropdown' cls='NetUIRibbonButton' name='More Options' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='EndNote 21' /&gt;&lt;uia cls='NetUIChunk' name='Citations' /&gt;&lt;uia automationid='_Dropdown' cls='NetUIRibbonButton' name='More Options' role='Menu Item' check:fulltext='More Options' /&gt;" Guid="6cb84d26-4a04-444d-8c4b-01138423300f" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" OutUiElement="{x:Null}" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Text="[citation_title]" Timeout="{x:Null}" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="24, 56, 263, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1001' /&gt;" Guid="d23045b6-5154-4bbe-95d3-ac30aa4d50a7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQsAAAAaCAYAAACgqHnYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB5SURBVHhe7d0xEYBAEATB8y8PE0ggfBKqPgJGQHeyDibdOc5rAfyZZwE+vcZiRkeATSyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARCyARBGARCyARCyAxMkQEKx1A7ux1XCIYKjAAAAAAElFTkSuQmCC" InformativeScreenshot="bc011907a27304b264ec5ff38f9834de.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='EndNote 21 Find &amp;amp; Insert My References' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,210.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02586a45-74de-41cf-b7e8-190da134ae6b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="613, 621, 100, 30" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Insert' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Insert' check:text='unchecked' /&gt;" Guid="f317d7c0-94ec-4c0a-a50e-36028645e697" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAiCAYAAACz35yrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJnSURBVGhD7Zq9zjFBFICncAcKl0Ene0FTU1K6glVqXMY2RK0hERQyhZIQErWfnM+Z3Vkzu8Ob97PW8J7iiTXnzLDn2TMSGXY4HIBwFxLkOCTIcVKCdrsdLBYLmE6nMJlMiJwQQsjaJ30YgjABxazXazidTnC5XIgcwFpvNhtZ+6QkQxBa3G631kWI17NareTupTsxBGGrHY9H62Ti9WDtsYt0JylBtolEfqAD3QkJcgwSlBGMMev4s5CgjCBBjvM1ggLOgPHAGvtkSFAWBByY54OwxZ6EBGUBCfoZU5AA32PAg/AVb5IxD3yhzcGiyvF0TPjenZhaNwAuYxw4fm6ceyXjhwTXtI0rhsMh1Go1aDQa0Gw2JfV6HTqdDpzPZ+scxAlBenFlXD3lwgdPL3zgx9dSjt4NUiSHQL4P1/U8bgh9ZwcNBgOoVqvhwxFRKpWg1Wq5L8jzxS1HSokKrV8bYGckOi3umtu1sS7y5i1uPp9DpVKBQqEAxWIR2u22NU/HCUFhUSOMrgnjePNGjrHtmeiCjDlq3hsFYacsl0sol8vQ7XatOUkcF6SPoYCom4ztzIabghCUNJvNYL/fW+NJPkOQliu3rbs5CncF/Ra3BV0LeouZuXIdo4uuca6K/0DQw877f/6moHhrC0n+6IeSbPE7gqJxmR9/h2zANW3jz5K7oG/lKwSpJ11hy/lUvkIQ8XtIkOM8FIQHFujQyPvA2j8UhEd+8OiPbTLxevBsHB59050YgtTBRUykTsoPrDU2xo8HFxFMGI/H0O/3odfrETmA/3yPRqOUHCQliHALEuQ4JMhpDvAPPOMUBjxCiugAAAAASUVORK5CYII=" InformativeScreenshot="7a38e2e586297e34393299f22703a77f.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='EndNote 21 Find &amp;amp; Insert My References' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,203.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V4" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="c:\users\xsilv\onedrive\desktop\school work\fypj\summary.docx" ContentHash="PKpw9dP_UEOl_Pq0xmL2cw" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATCSURBVFhH7ZhtUFRlFMehaaYy3F1hXV7UACk1nZrJHCHyJacZULR4MdAyAjQNKhvTcewFmCyzSVCwaWqsSWukhsrlxQoBBZZlidDNEl8qx0aRtCLQGis/+OF0znn2Prss1+UuXPeD05n5DXcvc/f/4znnee4MQddT3RBgNFfwvIq+2nkfX4CAUtFf48ofsm5W/YIAgNk3CgXfZVR7OBBgdohQ8F0mtYcDAWaHCgXf9b/g1cBsrYL9+MBQqIeMBMzWJjhnZw9cnV+YubvOwwO7e+l4UA0bDpgdGnR7QXs1AnH5DmbiU0QbTFzVBrHEyjaIedIuWGGHaKYVbluO5LXChFwbMz7HBpOe70TRcyjapxroLywYV+AlhihisStdYsggsTy32PicFhj3BJLdAnc8ewCmvuCEaYVdyNERIQQ95Nxi7lUbIIZM8Fq1cS65qOxmiHq8GVe+Du5c3wHTXj6iGuoPLCjFvNrpLebdTveqoRgSiXKRy5ohdkUtTFnngKkvfa8a6g8s6NnO8r3dUFbbDfdv6JRyies7YVvNGSa5yCnF4td2wNaq01CKkFjksiaIeKwJYvKqYMpaOwp+pxrqD0LQY856+i4DVRnKiHba4JVPTvE9qvcbenjOaMWKK07yvbO9l1mMCH/0gEuwVT9Bz3Z+7viNQzt+uCjbWf/tH3yP6lj3JZ4zauen9l/5XmXreYhAsfClxH6IybXqK+g5Z8pq/fXPFTlndO1Zk1fZuZ3Hzlziz0Uf/cRi4Uv2g2VJI0TrLSg3ALYzudjJoVQJOGNJhYf4+usTF6VQxmuHccWa+JrqwQ3foFwjWLKQzAaIztFZcOB5ZpMrtry8C9bsOMHX7+07y1CV7PkZ0l8Vf8iff1+RYpbMerA8Uo+Ce3QWdMkp51m9U8xcqfW0nLPcrUfguXeP83X78QvcVqq6g78LORQbu3gfY07ZBZbFVohY2ig3z3BhQc+3AO/O3WJ3tmNbaYdSzVjtYJSqtJ3jn1s+OwVjFbmMOsacslNfQUWMdyeeZxmbDnO4UiQpNkEjXv/ruisqrbgTpYScOf0rMKchegsqxwbJKb/wrLqDvWLOshqgskWsnFJCDCGx1C/B/PAXELZAZ0HPt4ByntGcKVX44Y9yzla/3eW6C+A42u8WS0UxkntoLwp+oK8gf8Bjg94CynmWvvEQlOB8Efc+3SrnbHq+DbZUnmSyNztZTooRi2r1F5RirjnzPjbEBvCaM6WdihyKhS5EUmogbL7egspbwDVnA44NKeY1Zx5iYSS2sAblqiF0QbX+gvR6kqtGYlIOjw0S41XzmjO5am6xMfOrYEyyFcKS3kHBKh0FMxuqqZ1uscHtZLEB7SQxRIohSVYwzHoLRk9fB8bEN8A0ZxuY5m4fESyooUy3xKWCb9Jg1KQsuPWufDDMLATjrDcxoGxQoL9gtjbBkLsLwDfPQMg9a2D0jBfBeN8mMM0uxYDyQYH+gtnaBA0zi3BlfBBfDIaEjdjazWCcXYLtHfnqEZitTZBCh4JXjedOHzkCs7UJinZpQT1ouGC2VkH1L7jWYPb1ITgKh79Z7QuuJcbE11sw2yAUfNdNyGQkIYDEI5RJ2UNWMEL/io1AogIEZWFmUPB/G0TZjj5N0YUAAAAASUVORK5CYII=" InformativeScreenshot="6229fb94388ea0852d8aa538d099fa0f.png" IsExactTitleEnabled="True" Reference="aq7oQG5bR0eKDbY1B0c4zQ/F5J1vp73Y06qSJ0MYWb3jQ" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='summary.docx  -  Compatibility Mode - Word' /&gt;" Title="0509.enl" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
